@@ -82,7 +82,7 @@ Questa and xsim scripts are in `sim/` (`sh sim/run_questa.sh 4`).
 | Latency at N=8 | ~70% latency reduction with 4 MACs compared to the single-MAC baseline |
 | FPGA Synthesis | Xilinx Vivado at 100 MHz target frequency with zero setup/hold violations |
 | ASIC Flow | Synthesized in Synopsys Design Compiler at 100 MHz, placed & routed in Cadence Innovus (60% utilization, ~50 ps skew), and signed off in Cadence Tempus (~3.5 mW, zero setup/hold or DRC/LVS violations) |
-|
+
 
 
 ## Notes
