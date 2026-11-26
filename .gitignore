@@ -1,0 +1,13 @@
+work/
+obj_dir/
+xsim.dir/
+*.ucdb
+*.vcd
+*.wdb
+*.log
+*.jou
+*.pb
+*.rpt
+vectors/
+__pycache__/
+sw/test_driver
