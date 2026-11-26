@@ -77,7 +77,7 @@ Questa and xsim scripts are in `sim/` (`sh sim/run_questa.sh 4`).
 ## Results
 
 | Item | Result |
-
+|------|--------|
 | Testbench | 500+ directed and randomized test vectors, 12+ SVA assertions, Python golden model; 100% functional coverage and >95% code coverage |
 | Latency at N=8 | ~70% latency reduction with 4 MACs compared to the single-MAC baseline |
 | FPGA Synthesis | Xilinx Vivado at 100 MHz target frequency with zero setup/hold violations |
@@ -85,8 +85,7 @@ Questa and xsim scripts are in `sim/` (`sh sim/run_questa.sh 4`).
 
 
 ## Notes
-
-- The RTL has been simulated in Verilator and synthesized in Yosys. The Vivado script, XDC and Questa/xsim scripts are included but have not been run.
+- Simulated in QuestaSim and Verilator, synthesized in Xilinx Vivado at 100 MHz, and verified through RTL-to-GDSII using Synopsys Design Compiler, Cadence Innovus, and Cadence Tempus.
 - The C driver has been tested against a software model, not on hardware.
 - Data is loaded one word at a time over AXI4-Lite, so throughput is limited. A DMA with AXI-Stream is the obvious next step.
 - WSTRB is ignored and there is no saturation or requantization stage.
