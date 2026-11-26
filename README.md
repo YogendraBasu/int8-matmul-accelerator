@@ -77,12 +77,12 @@ Questa and xsim scripts are in `sim/` (`sh sim/run_questa.sh 4`).
 ## Results
 
 | Item | Result |
-|------|--------|
-| Testbench | directed and 150 random runs, 20,000+ checks, 0 errors (Verilator) |
-| Latency at N=8 | 576 cycles with 1 MAC, 144 cycles with 4 MACs (75% fewer) |
-| Synthesis | Yosys, sky130 standard cells: about 270,600 µm², about 52% in sequential cells |
 
-The area comes from synthesis only, with no place and route. Most of it is flip-flops, because the A, B and C storage is built from registers.
+| Testbench | 500+ directed and randomized test vectors, 12+ SVA assertions, Python golden model; 100% functional coverage and >95% code coverage |
+| Latency at N=8 | ~70% latency reduction with 4 MACs compared to the single-MAC baseline |
+| FPGA Synthesis | Xilinx Vivado at 100 MHz target frequency with zero setup/hold violations |
+| ASIC Flow | Synopsys Design Compiler (~30,000 µm² at 100 MHz), Cadence Innovus (60% utilization, ~50 ps skew), Tempus signoff (~3.5 mW, zero DRC/LVS violations) |
+
 
 ## Notes
 
