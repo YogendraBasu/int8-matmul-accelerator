@@ -81,7 +81,7 @@ Questa and xsim scripts are in `sim/` (`sh sim/run_questa.sh 4`).
 | Testbench | 500+ directed and randomized test vectors, 12+ SVA assertions, Python golden model; 100% functional coverage and >95% code coverage |
 | Latency at N=8 | ~70% latency reduction with 4 MACs compared to the single-MAC baseline |
 | FPGA Synthesis | Xilinx Vivado at 100 MHz target frequency with zero setup/hold violations |
-| ASIC Flow | Synopsys Design Compiler (~30,000 µm² at 100 MHz), Cadence Innovus (60% utilization, ~50 ps skew), Tempus signoff (~3.5 mW, zero DRC/LVS violations) |
+| ASIC Flow | Synopsys Design Compiler (~277,813 µm² at 100 MHz), Cadence Innovus (60% utilization, ~50 ps skew), Tempus signoff (~3.5 mW, zero DRC/LVS violations) |
 
 
 ## Notes
